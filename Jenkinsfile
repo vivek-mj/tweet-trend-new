@@ -1,5 +1,5 @@
 def registry = 'https://vivekcloud.jfrog.io'
-def imageName = 'vivekcloud.jfrog.io/vikki-docker-local/ttrend'
+def imageName = 'vivekcloud.jfrog.io/vikki-docker-local/ttrendz'
 def version   = '2.1.2'
 pipeline {
     agent {
@@ -35,7 +35,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "vvk-libs-release-local/{1}",
+                              "target": "vicky-libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
