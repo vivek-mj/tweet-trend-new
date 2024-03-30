@@ -1,6 +1,6 @@
 def registry = 'https://vivekcloud.jfrog.io'
 def imageName = 'vivekcloud.jfrog.io/vikki-docker-local/ttrendz'
-def version   = '2.1.2'
+def version   = '2.1.3'
 pipeline {
     agent {
         node {
