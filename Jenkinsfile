@@ -72,15 +72,7 @@ environment {
             }
         }
     }
-        stage(" Deploy ") {
-       steps {
-         script {
-            echo '<--------------- Helm Deploy Started --------------->'
-            sh 'helm install /home/ubuntu/kubernetes/ttrend /home/ubuntu/kubernetes/ttrend-1.0.1.tgz'
-            echo '<--------------- Helm deploy Ends --------------->'
-         }
-       }
-     }
+        
 
         
   }
